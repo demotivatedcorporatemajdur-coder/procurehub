@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - ProcureHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ProcureHub Admin Panel</h1>
+
+  <!-- Tender Creation Form -->
+  <h2>Create Tender</h2>
+  <form id="tenderForm">
+    <input type="text" id="tenderName" placeholder="Tender Name" required>
+    <input type="date" id="tenderDeadline" required>
+    <button type="submit">Create Tender</button>
+  </form>
+
+  <!-- Vendors List -->
+  <h2>Vendors</h2>
+  <button onclick="fetchVendors()">Load Vendors</button>
+  <ul id="vendorList"></ul>
+
+  <!-- Quotations -->
+  <h2>Quotations</h2>
+  <button onclick="fetchQuotations()">Load Quotations</button>
+  <ul id="quotationList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
